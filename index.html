@@ -171,7 +171,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const cio=new IntersectionObserver(e=>e.forEach(en=>{if(en.isIntersecting){const el=en.target,end=+el.dataset.count;let s=0;const t=setInterval(()=>{s+=Math.ceil(end/40);if(s>=end){s=end;clearInterval(t)}el.textContent=(end>=1000?'$':'')+s.toLocaleString()+(end>=1000?'T+':'')},40);cio.unobserve(el)}}),{threshold:.5});
 document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
 </script>
-<!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "5fb51d1999084c91989809d7608061e0"}'></script><!-- End Cloudflare Web Analytics -->
+<!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1407571ec8bc45c3a082c91096558135"}'></script><!-- End Cloudflare Web Analytics -->
 <script>(function(){var v=document.querySelector('.hero-video');if(!v)return;v.muted=true;var p=v.play();if(p&&p.catch){p.catch(function(){var t=function(){v.play().catch(function(){})};document.addEventListener('touchstart',t,{once:true});document.addEventListener('click',t,{once:true})})}})();</script>
 </body>
 </html>
